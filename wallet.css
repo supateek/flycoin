@@ -8,13 +8,33 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column; /* Ensure the body flex direction is column to stack the navbar and other containers */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the nav items horizontally */
+    align-items: center; /* Center the nav items vertically */
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 #board {
-    /* background-color: skyblue; */
-    background-image: url("./walletbg.png");
+    background-image: url("./walletbg.png"); /* Ensure the correct image path */
 }
-
 
 .wallet-container {
     background-color: white;
@@ -26,5 +46,5 @@ body {
 .balance {
     font-size: 48px;
     font-weight: bold;
-    color: #333;
+    color: #333;
 }
