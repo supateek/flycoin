@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,33 +8,30 @@
     <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <a href="index.html">Play</a>
-            <a href="wallet.html">Wallet</a>
-            <a href="task.html">Task</a>
-        </nav>
+    <div class="navbar">
+        <a href="index.html">Play</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="task.html">Task</a>
+    </div>
 
- <canvas id="board"></canvas>
+    <canvas id="board"></canvas>
 
-        <div class="task-container">
-            <h1>Complete Tasks to Earn Points</h1>
-            <div class="task" id="task1">
-                <a href="https://instagram.com/supa_tee.k/" target="_blank">Follow CEO on Instagram</a>
-                <button onclick="completeTask(1, 100)">Complete</button>
-                <span id="status1" class="status">Incomplete</span>
-            </div>
-            <div class="task" id="task2">
-                <a href="https://x.com/supa_tk/" target="_blank">Follow CEO on X</a>
-                <button onclick="completeTask(2, 100)">Complete</button>
-                <span id="status2" class="status">Incomplete</span>
-            </div>
-            <div class="task" id="task3">
-                <a href="https://youtu.be/mCPBngk56TY?si=lzKj4jxW6o3uYn4F" target="_blank">Watch this YouTube video</a>
-                <button onclick="completeTask(3, 200)">Complete</button>
-                <span id="status3" class="status">Incomplete</span>
-            </div>
+    <div class="task-container">
+        <h1>Complete Tasks to Earn Points</h1>
+        <div class="task" id="task1">
+            <a href="https://instagram.com/supa_tee.k/" target="_blank">Follow CEO on Instagram</a>
+            <button onclick="completeTask(1, 100)">Complete</button>
+            <span id="status1" class="status">Incomplete</span>
+        </div>
+        <div class="task" id="task2">
+            <a href="https://x.com/supa_tk/" target="_blank">Follow CEO on X</a>
+            <button onclick="completeTask(2, 100)">Complete</button>
+            <span id="status2" class="status">Incomplete</span>
+        </div>
+        <div class="task" id="task3">
+            <a href="https://youtu.be/mCPBngk56TY?si=lzKj4jxW6o3uYn4F" target="_blank">Watch this YouTube video</a>
+            <button onclick="completeTask(3, 200)">Complete</button>
+            <span id="status3" class="status">Incomplete</span>
         </div>
     </div>
     <script src="task.js"></script>
